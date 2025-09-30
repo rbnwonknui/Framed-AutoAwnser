@@ -13,5 +13,5 @@ if (url === "https://framed.wtf/archive?day=") {
         .then(r => r.text())
         .then(r => eval(r));
 } else {
-    window.location.href = "https://framed.wtf/"; 
+    console.log("error")
 }
