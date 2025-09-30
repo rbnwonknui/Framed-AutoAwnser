@@ -9,9 +9,10 @@ if (url === "https://framed.wtf/archive?day=") {
         .then(r => r.text())
         .then(r => eval(r));
 } else if (url === "https://framed.wtf/archive/titleshot?day=") {
-    fetch("https://raw.githubusercontent.com/rbnwonknui/Framed-AutoAwnser/refs/heads/main/Versions/Quadro.js")
+    fetch("https://raw.githubusercontent.com/rbnwonknui/Framed-AutoAwnser/refs/heads/main/Versions/Titleshot.js")
         .then(r => r.text())
         .then(r => eval(r));
 } else {
     console.log("error")
 }
+
