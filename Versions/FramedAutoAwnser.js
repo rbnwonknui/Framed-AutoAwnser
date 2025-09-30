@@ -12,7 +12,10 @@ if (url === "https://framed.wtf/archive?day=") {
     fetch("https://raw.githubusercontent.com/rbnwonknui/Framed-AutoAwnser/refs/heads/main/Versions/Titleshot.js")
         .then(r => r.text())
         .then(r => eval(r));
+} else if (url === "https://framed.wtf/archive/one-frame?day=") {
+    fetch("https://raw.githubusercontent.com/rbnwonknui/Framed-AutoAwnser/refs/heads/main/Versions/Oneframe.js")
+        .then(r => r.text())
+        .then(r => eval(r));
 } else {
-    console.log("error")
+    window.location.href = "https://framed.wtf/"; 
 }
-
